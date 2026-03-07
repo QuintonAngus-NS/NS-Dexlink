@@ -36,7 +36,7 @@ async function fetchGlucoseData() {
 
     const mmolArrow = document.getElementById('trendArrow')
 
-    console.log(currantGlucose.trendRate)
+    console.log(currantGlucose.trendRate || 'no trendRate detected')
 
     const trendIcon = trendToIcon[currantGlucose.trendRate]
 
