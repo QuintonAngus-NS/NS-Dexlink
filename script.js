@@ -14,7 +14,7 @@ submitBtn.addEventListener('click', async (e) => {
 })
 
 async function fetchGlucoseData() {
-    const response = await fetch('https://dexlink-server-808702537090.europe-west1.run.app/currantGlucose')
+    const response = await fetch('https://dexlink-server-808702537090.europe-west1.run.app/currentGlucose')
     const currantGlucose = await response.json()
     console.log(currantGlucose)
 }
