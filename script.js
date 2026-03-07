@@ -25,13 +25,13 @@ async function fetchGlucoseData() {
     mmolValue.innerHTML = `${mmol}<span id="dataTypeText">mmol/l</span>`
 
     const trendToIcon = {
-    doubleUp: "keyboard_double_arrow_up",
-    singleUp: "arrow_upward",
-    fortyFiveUp: "trending_up",
-    flat: "trending_flat",
-    fortyFiveDown: "trending_down",
-    singleDown: "arrow_downward",
-    doubleDown: "keyboard_double_arrow_down"
+    doubleUp: "↑↑",
+    singleUp: "↑",
+    fortyFiveUp: "↗",
+    flat: "→",
+    fortyFiveDown: "↘",
+    singleDown: "↓",
+    doubleDown: "↓↓"
     }
 
     const mmolArrow = document.getElementById('trendArrow')
