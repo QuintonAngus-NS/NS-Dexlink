@@ -16,7 +16,9 @@ submitBtn.addEventListener('click', async (e) => {
 async function fetchGlucoseData() {
     const response = await fetch('https://dexlink-server-808702537090.europe-west1.run.app/currentGlucose')
     const currantGlucose = await response.json()
-    console.log(((currantGlucose.value) / 18).toFixed(1))
+    const value = currantGlucose.value
+    const mmol = (value / 18).toFixed(1)
+    console.log(`MMOL: ${mmol}`)
 }
 
 const params = new URLSearchParams(window.location.search);
