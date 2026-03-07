@@ -13,6 +13,12 @@ submitBtn.addEventListener('click', async (e) => {
 
 })
 
+async function fetchGlucoseData() {
+    const response = await fetch('https://dexlink-server-808702537090.europe-west1.run.app/currantGlucose')
+    const currantGlucose = await response.json()
+    console.log(currantGlucose)
+}
+
 const params = new URLSearchParams(window.location.search);
 
 if (params.get("loggedIn") === "true") {
