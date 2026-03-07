@@ -9,6 +9,6 @@ submitBtn.addEventListener('click', async (e) => {
     screenWrapper.style.alignItems = 'center'
     loadingWrapper.style.display = 'flex'
 
-    window.location.href = 'https://sandbox-api.dexcom.eu'
+    window.location.href = 'https://sandbox-api.dexcom.com/v2/oauth2/login?client_id=GiIF7R1az0aDCTZGiqcMzRCem88RN2vk&redirect_uri=https://dexlink-server-808702537090.europe-west1.run.app/callBack&response_type=code&scope=offline_access'
 
 })
