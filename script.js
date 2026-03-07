@@ -42,6 +42,9 @@ async function fetchGlucoseData() {
 
     mmolArrow.innerHTML = trendIcon
 
+    const trendRateText = document.getElementById('trenddetails')
+    trendRateText.innerHTML = `<b>Trend Rate: </b>${currantGlucose.trendRate}<span class="trendChangeMMOL">mmol/l/min</span>`
+
     return true
 }
 async function init() {
