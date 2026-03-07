@@ -36,7 +36,7 @@ async function fetchGlucoseData() {
 
     const mmolArrow = document.getElementById('trendArrow')
 
-    const trendIcon = trendToIcon[currantGlucose.trend]
+    const trendIcon = trendToIcon[currantGlucose.trendRate]
 
     return true
 }
@@ -55,6 +55,7 @@ async function init() {
         // Start fetching glucose data
         await fetchGlucoseData();
         loadingWrapper.style.display = 'none'
+        screenWrapper.style.alignItems = 'start'
         document.getElementById('dataWrapper').style.display = 'flex'
 }
 }
