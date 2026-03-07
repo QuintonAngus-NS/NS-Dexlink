@@ -236,3 +236,81 @@ input:focus {
     font-size: 20px;
     font-weight: 600;
 }
+
+/* ----------------------------------------------------- */
+
+/* data Styling */
+
+#dataWrapper {
+    display: none;
+    justify-content: start;
+    align-items: start;
+    padding: 25px;
+    width: 700px;
+    flex-direction: column;
+}
+
+#trendArrow {
+    font-size: 50px;
+    color: #ffffff;
+    width: 75px;
+    height: 75px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-right: 25px;
+    background-color: #079f41;
+    margin-bottom: 25px;
+}
+
+#currentReadingWrapper {
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: start;
+    text-align: center;
+    height: 75px;
+    margin-bottom: 50px;
+}
+
+#currentReading {
+    font-size: 50px;
+    color: #079f41;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#dataTypeText {
+    font-weight: 400;
+    font-size: 20px;
+    color: #079f41;
+}
+
+#extraDetailsTitle {
+    color: #079f41;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+#trendDetails {
+    font-size: 20px;
+}
+
+.trendChangeMMOL {
+    font-size: 15px;
+}
+
+#transmitterGen {
+    font-size: 20px;
+}
+
+#readingDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
