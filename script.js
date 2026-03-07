@@ -20,6 +20,7 @@ if (params.get("loggedIn") === "true") {
     detailsWrapper.style.display = "none";
 
     // Show loading screen
+    screenWrapper.style.alignItems = 'center'
     loadingWrapper.style.display = "flex";
 
     // Start fetching glucose data
