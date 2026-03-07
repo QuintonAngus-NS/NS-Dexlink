@@ -263,6 +263,7 @@ input:focus {
     margin-right: 25px;
     background-color: #079f41;
     margin-bottom: 25px;
+    vertical-align: middle;
 }
 
 #currentReadingWrapper {
