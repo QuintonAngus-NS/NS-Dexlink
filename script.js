@@ -45,6 +45,10 @@ async function fetchGlucoseData() {
     const trendRateText = document.getElementById('trenddetails')
     trendRateText.innerHTML = `<b>Trend Rate: </b>${currantGlucose.trendRate}<span class="trendChangeMMOL">mmol/l/min</span>`
 
+    const transGen = document.getElementById('transmitterGen')
+
+    transGen.innerHTML = `<b>Transmitter Generation: </b>${currantGlucose.transmitterGeneration}`
+
     return true
 }
 async function init() {
