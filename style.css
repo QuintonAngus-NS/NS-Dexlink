@@ -1,0 +1,238 @@
+/* ----------------------------------------------------- */
+
+/* Standard styling */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+}
+
+.divider {
+    width: 100%;
+    border-bottom: 1px #079f41 solid;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#screenWrapper {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* ----------------------------------------------------- */
+
+/* Font Styling */
+
+* {
+    font-family: 'Open Sans';
+    color: #141414;
+}
+
+h1 {
+    font-size: 35px;
+    color: #079f41;
+    font-weight: 600;
+}
+
+.material-symbols-outlined {
+    color: #141414;
+    height: inherit;
+    margin: 15px;
+    font-size: inherit;
+}
+
+.error {
+    color: red;
+}
+
+.disclaimer {
+    font-size: 12px;
+    font-weight: 300;
+    color: #141414;
+    text-align: start;
+    width: 100%;
+}
+
+
+/* ----------------------------------------------------- */
+
+/* Logo Styling */
+
+.logoWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.logoPrimary {
+    font-size: 50px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-bottom: 1px #ffffff solid;
+    margin: 2px;
+    color: #079f41;
+}
+
+.logoSecondary {
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: white;
+}
+
+/* ----------------------------------------------------- */
+
+/* Footer Styling */
+
+footer {
+    margin-top: auto;
+    background-color: #141414;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top-left-radius: 45px;
+    border-top-right-radius: 45px;
+    width: 100%;
+}
+
+#copyRightText {
+    font-size: 15px;
+    color: white;
+    border-top: #ffffff 1px solid;
+    margin: 25px;
+    font-weight: 300;
+    padding-top: 10px;
+    text-decoration: none;
+}
+
+/* ----------------------------------------------------- */
+
+/* Account Details Styling */
+
+#detailsWrapper {
+    padding: 25px;
+    width: 500px;
+}
+
+#accountDetailsH1 {
+    border-bottom: #079f41 1px solid;
+    padding-bottom: 5px;
+    margin-bottom: 50px;
+}
+
+.inputWrapper {
+    border: 1px #141414 solid;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 500px;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+input {
+    border: none;
+    width: 100%;
+    margin: 5px;
+    height: 40px;
+}
+
+form {
+    width: 500px;
+}
+
+input::placeholder {
+    color: #141414;
+}
+
+input:focus {
+    border: 2px #079f41 solid;
+    outline: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#submitBtn {
+    width: inherit;
+    height: 40px;
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    background-color: #079f41;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+
+#formError {
+    font-size: 15px;
+    color: red;
+    font-weight: 500;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+#errorWrapper {
+    display: none;
+    align-items: center;
+    justify-content: flex-start;
+    height: 25px;
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+#errorIcon {
+    margin-left: 0;
+}
+
+#loadingWrapper {
+    height: 200px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#loadingWheel {
+    animation: rotate360 1.5s linear infinite;
+    border: solid 1px #ededed;
+    border-left: #079f41 1px solid;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    margin: 25px;
+    
+}
+
+@keyframes rotate360 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#loadingText {
+    font-size: 20px;
+    font-weight: 600;
+}
