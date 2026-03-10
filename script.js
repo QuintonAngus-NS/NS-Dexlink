@@ -61,6 +61,13 @@ async function fetchGlucoseData() {
     document.getElementById('transmitterGen').innerHTML =
         `<b>Transmitter Generation: </b>${currantGlucose.transmitterGeneration}`;
 
+    // Reading time (formatted nicely)
+    const time = new Date(currantGlucose.displayTime);
+    document.getElementById('readingTime').innerHTML =
+        `<b>Reading Time: </b>${time.toLocaleString()}`;
+
+        
+
     return true;
 }
 
