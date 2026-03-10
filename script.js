@@ -16,7 +16,7 @@ submitBtn.addEventListener('click', (e) => {
     // EU PRODUCTION LOGIN URL
     window.location.href =
         'https://api.dexcom.eu/v2/oauth2/login' +
-        '?client_id=GiIF7R1az0aDCTZGiqcMzRCem88RN2vk' +
+        '?client_id=ctT7YimKIZHQ4cC7g9j4EWtq7MQVR63y' +
         '&redirect_uri=https://dexlink-server-808702537090.europe-west1.run.app/callBack' +
         '&response_type=code' +
         '&scope=offline_access';
